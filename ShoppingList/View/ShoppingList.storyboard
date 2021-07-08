@@ -43,6 +43,9 @@
                                     <imageReference key="image" image="plus" catalog="system"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="NUf-Xu-Aek" kind="presentation" id="zVg-1C-NVr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -60,6 +63,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+        <!--AddNewItem-->
+        <scene sceneID="p5L-hH-XFe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddNewItem" id="NUf-Xu-Aek" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dSJ-bw-cOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="94"/>
         </scene>
     </scenes>
     <resources>
