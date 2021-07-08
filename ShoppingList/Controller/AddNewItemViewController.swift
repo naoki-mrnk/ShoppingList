@@ -9,7 +9,7 @@ import UIKit
 
 class AddNewItemViewController: UIViewController {
 
-    @IBOutlet weak var itemListTableView: UITableView!
+    @IBOutlet private weak var itemListTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

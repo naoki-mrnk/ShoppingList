@@ -9,8 +9,8 @@ import UIKit
 
 class ShoppingListViewController: UIViewController {
 
-    @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var shoppingListTableView: UITableView!
+    @IBOutlet private weak var addButton: UIButton!
+    @IBOutlet private weak var shoppingListTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
