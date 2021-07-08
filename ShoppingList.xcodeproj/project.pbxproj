@@ -66,7 +66,6 @@
 				7FB0F0AD269682E6009BB862 /* Controller */,
 				7FB0F0AC269682D0009BB862 /* Application */,
 				7FB0F0A126968272009BB862 /* Assets.xcassets */,
-				7FB0F0A326968272009BB862 /* LaunchScreen.storyboard */,
 				7FB0F0A626968272009BB862 /* Info.plist */,
 			);
 			path = ShoppingList;
@@ -93,6 +92,7 @@
 		7FB0F0B026968313009BB862 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7FB0F0A326968272009BB862 /* LaunchScreen.storyboard */,
 				7FB0F0B126968322009BB862 /* ShoppingList.storyboard */,
 				7FB0F0B726968742009BB862 /* AddNewItem.storyboard */,
 			);
