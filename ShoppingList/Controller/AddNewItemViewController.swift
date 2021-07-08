@@ -9,9 +9,12 @@ import UIKit
 
 class AddNewItemViewController: UIViewController {
 
+    @IBOutlet weak var itemListTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
+    }
+    @IBAction func tappedAddItemButton(_ sender: UIButton) {
     }
 }
