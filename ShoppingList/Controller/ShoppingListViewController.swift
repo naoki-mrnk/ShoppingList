@@ -75,7 +75,6 @@ extension ShoppingListViewController: UITableViewDelegate {
                 print(shoppingItem.boughtAt!)
             }
 
-//            shoppingItems = realmManager.realm.objects(ShoppingItem.self).filter("boughtAt == nil")
             shoppingListTableView.reloadData()
         }
     }
