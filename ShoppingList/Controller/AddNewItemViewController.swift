@@ -1,19 +1,17 @@
 //
-//  ViewController.swift
+//  AddNewItemViewController.swift
 //  ShoppingList
 //
-//  Created by cmStudent on 2021/07/08.
+//  Created by naoki-mrnk on 2021/07/08.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class AddNewItemViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
-
 }
-
