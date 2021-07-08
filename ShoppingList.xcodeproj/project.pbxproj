@@ -15,6 +15,7 @@
 		7FB0F0B42696835D009BB862 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0F0B32696835D009BB862 /* ShoppingListViewController.swift */; };
 		7FB0F0B826968742009BB862 /* AddNewItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB0F0B726968742009BB862 /* AddNewItem.storyboard */; };
 		7FB0F0BA2696875E009BB862 /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0F0B92696875E009BB862 /* AddNewItemViewController.swift */; };
+		7FB0F0C326969222009BB862 /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0F0C226969222009BB862 /* SettingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7FB0F0B32696835D009BB862 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
 		7FB0F0B726968742009BB862 /* AddNewItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNewItem.storyboard; sourceTree = "<group>"; };
 		7FB0F0B92696875E009BB862 /* AddNewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
+		7FB0F0C226969222009BB862 /* SettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				7FB0F0B5269684F3009BB862 /* Model */,
 				7FB0F0B026968313009BB862 /* View */,
 				7FB0F0AD269682E6009BB862 /* Controller */,
+				7FB0F0BB26968CE9009BB862 /* Extension */,
 				7FB0F0AC269682D0009BB862 /* Application */,
 				7FB0F0A126968272009BB862 /* Assets.xcassets */,
 				7FB0F0A626968272009BB862 /* Info.plist */,
@@ -111,6 +114,14 @@
 			children = (
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		7FB0F0BB26968CE9009BB862 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7FB0F0C226969222009BB862 /* SettingButton.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 				7FB0F0992696826E009BB862 /* AppDelegate.swift in Sources */,
 				7FB0F09B2696826E009BB862 /* SceneDelegate.swift in Sources */,
 				7FB0F0BA2696875E009BB862 /* AddNewItemViewController.swift in Sources */,
+				7FB0F0C326969222009BB862 /* SettingButton.swift in Sources */,
 				7FB0F0B42696835D009BB862 /* ShoppingListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

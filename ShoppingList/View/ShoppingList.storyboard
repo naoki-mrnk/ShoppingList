@@ -44,7 +44,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="NUf-Xu-Aek" kind="presentation" id="zVg-1C-NVr"/>
+                                    <action selector="tappedAddButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mtZ-Oc-o84"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,6 +59,11 @@
                             <constraint firstItem="soN-JI-MbN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vQR-9G-uc7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="OZI-VV-rNf" id="X0n-2z-Gpr"/>
+                        <outlet property="shoppingListTableView" destination="soN-JI-MbN" id="Y5c-1R-P04"/>
+                        <segue destination="NUf-Xu-Aek" kind="presentation" identifier="toAddNewItem" id="YX6-os-GeL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
