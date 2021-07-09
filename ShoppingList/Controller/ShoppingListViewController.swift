@@ -29,13 +29,18 @@ class ShoppingListViewController: UIViewController {
         shoppingListTableView.dataSource = self
         
         shoppingItems = realmManager.realm.objects(ShoppingItem.self).filter("boughtAt == nil")
-        shoppingListTableView.reloadData()
         
         print(realmManager.realm.objects(ShoppingItem.self))
         print(realmManager.realm.objects(Item.self))
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        shoppingListTableView.reloadData()
+    }
     
+    // MARK: - IBAction
     @IBAction func tappedAddButton(_ sender: UIButton) {
         performSegue(withIdentifier: "toAddNewItem", sender: nil)
     }
@@ -74,8 +79,7 @@ extension ShoppingListViewController: UITableViewDelegate {
                 shoppingItem.boughtAt = Date()
                 print(shoppingItem.boughtAt!)
             }
-
-            shoppingListTableView.reloadData()
         }
+        shoppingListTableView.reloadData()
     }
 }

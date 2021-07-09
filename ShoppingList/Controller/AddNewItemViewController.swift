@@ -16,13 +16,19 @@ class AddNewItemViewController: UIViewController {
     // MARK: - IBOutlet
     @IBOutlet private weak var itemListTableView: UITableView!
     @IBOutlet weak var inputNewItemTextField: UITextField!
+    
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
         itemListTableView.delegate = self
         itemListTableView.dataSource = self
+        
+        items = realmManager.realm.objects(Item.self)
+        itemListTableView.reloadData()
     }
     
+    // MARK: - IBAction
     @IBAction func tappedAddItemButton(_ sender: UIButton) {
         let itemIsEmpty = inputNewItemTextField.text?.isEmpty ?? false
         if itemIsEmpty {
@@ -42,6 +48,9 @@ class AddNewItemViewController: UIViewController {
             }
             realmManager.writeDB(DB: shoppingItem)
         }
+        itemListTableView.reloadData()
+        
+        dismiss(animated: true, completion: nil)
     }
 }
 
@@ -66,4 +75,3 @@ extension AddNewItemViewController: UITableViewDelegate {
         return 50
     }
 }
-
